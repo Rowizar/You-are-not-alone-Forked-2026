@@ -581,7 +581,7 @@ label jenya_cp3:
 
     #show mc normal homea at left2 with dissolve
     show mc normal home ca at left2 with dissolve
-    play music gone fadein 1.0
+    play music sadness fadein 1.0
 
     mc "С тобой всё в порядке?"
 

@@ -880,7 +880,7 @@ label jenya_cp2:
     pause 1.0
 
     #Добрая музыка
-    play music sincerely fadein 1.0
+    play music mystery fadein 1.0
     #Фон с рассветом в комнате Гг.
     scene bg_room_dawn with dissolve
 
