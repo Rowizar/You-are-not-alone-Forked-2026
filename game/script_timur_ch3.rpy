@@ -403,6 +403,7 @@ label timur_cp3:
         call screen puzzle15_screen
 
 label puzzle_solved:
+    $ relate_timur += 5
     "Дело сделано!"
     if relate_timur >= 20:
         jump timur_good_end
@@ -410,4 +411,8 @@ label puzzle_solved:
         jump timur_bad_end
 
 label puzzle_skipped:
-    jump timur_bad_end
+    $ relate_timur -= 5
+    if relate_timur >= 20:
+        jump timur_good_end
+    else:
+        jump timur_bad_end
