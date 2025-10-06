@@ -1071,9 +1071,9 @@ label jenya_cp2:
 
     n"Но я был благодарен Жене не только за гадание и оберег, но и за всё. Надеюсь, и я смогу ей помочь однажды."
 
-    if persistent.jenya_endchap2 != True:
-        $ renpy.notify("В дневнике появилась новая запись!")
-    $ persistent.jenya_endchap2 = True
+    #if persistent.jenya_endchap2 != True:
+        #$ renpy.notify("В дневнике появилась новая запись!")
+    #$ persistent.jenya_endchap2 = True
 
     scene bg_room_zhenya with dissolve
     #show mc blush homea at left2 with dissolve - пригодится при оптимизации для веб-версии, как и остальные спрайты, заменённые на ca-версии

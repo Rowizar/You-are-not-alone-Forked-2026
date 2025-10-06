@@ -97,7 +97,6 @@ screen puzzle15_full_image():
         xfill True
         yfill True
 
-#define wallpapers = ["Wallpaper1", "Wallpaper2"]
 
 # начало главы
 label timur_cp3:
@@ -126,7 +125,6 @@ label timur_cp3:
         "Очень не вовремя."
 
         scene bg_hardware_store with dissolve
-        #нужен фоновый звук для строительного магазина
         "Тимур, будучи профессионалом, бегал от полки к полке, шустро закидывая в тележку всё необходимое. И, только когда мы подошли к отделу с обоями, процесс начал затягивать и меня."
 
         "Я разглядывал разноцветные рулоны, представляя, какой может стать наша комната. Взгляд упал на обои, которые, как мне казалось, подошли бы идеально. Но Тимур опередил меня и одной «левой», в прямом и переносном смысле, закинул в тележку два рулона других обоев."
@@ -153,7 +151,7 @@ label timur_cp3:
 
         "Я ждал, пока злость Тимура достигнет предела, но он молчал и смотрел на меня убийственным взглядом. Я нервничал. Всё же злой Тимур – не самое безопасное существо. В момент он выдохнул и отвел взгляд. Пронесло?"
 
-        show timur angry winter at right2 with dissolve
+        show timur normal wintera at right2 with dissolve
         t "Ладно, давай так: обои берём мои, но клеить я их буду сам."
 
         show mc normal winter at left2 with dissolve
@@ -204,7 +202,7 @@ label timur_cp3:
         show mc surprise winter at left2 with dissolve
         mc "Тимур, что это?"
 
-        show timur normal winter at right2 with dissolve
+        show timur normal wintera at right2 with dissolve
         t "Обои."
 
         mc "Я вижу, но почему ты меня даже не спросил?"
@@ -234,7 +232,7 @@ label timur_cp3:
 
         "Тимур, кажется, начал заводиться, а потом посмотрел на ярко-красные обои в тележке и спокойно выдохнул:"
 
-        show timur normal winter at right2 with dissolve
+        show timur normal wintera at right2 with dissolve
 
         t "Ладно, давай так. Мы подберём обои, которые устроят нас обоих. Ты выбираешь цвет, а я отвечаю за качество. По рукам?"
 
@@ -257,13 +255,13 @@ label timur_cp3:
         scene bg_room_repair_day with dissolve
         "Зайдя в комнату, мой сосед тут же начал собираться, чтобы снова уйти."
 
-        show timur normal winter at right2 with dissolve
+        show timur normal wintera at right2 with dissolve
         t "Слушай, мне уже бежать пора. Обои завтра поклею."
 
         show mc smile winter at left2 with dissolve
         mc "Хорошо. Удачи!"
 
-        hide timur normal winter with dissolve
+        hide timur normal wintera with dissolve
         hide mc normal winter with dissolve
         "Тимур улыбнулся мне в ответ и ушёл. А я остался один."
 
@@ -361,7 +359,7 @@ label timur_cp3:
         hide cj_photo with dissolve
 
         "Я был в шоке. Оказалось, что человек с ответами был прямо под моим носом. Осталось только дождаться Тимура, если он вообще захочет говорить со мной…"
-        
+
         "Но сейчас всё-таки нужно поклеить обои."
 
         # ПЯТНАШКИ

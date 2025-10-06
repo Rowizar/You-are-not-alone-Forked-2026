@@ -116,7 +116,7 @@ image mc talk crossed ca = At('mc talk crossed c', sprite_highlight('mc'))
 image mc thoughtful crossed ca = At('mc thoughtful crossed c', sprite_highlight('mc'))
 
 image timur normala = At('timur normal', sprite_highlight('timur'))
-image timur angrya = At('timur angry', sprite_highlight('timur'))
+image timur normal wintera = At('timur normal winter', sprite_highlight('timur'))
 image timur angry wintera = At('timur angry look winter', sprite_highlight('timur'))
 image timur normal smilea = At('timur normal smile', sprite_highlight('timur'))
 image timur normal homea = At('timur normal home', sprite_highlight('timur'))
