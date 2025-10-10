@@ -1,7 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-OSError: Couldn't find file 'Morning.ogg'.
+Exception: Could not find font 'ComicRelief.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -20,24 +20,79 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\core.py", line 3587, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\core.py", line 4384, in interact_core
-    renpy.audio.audio.periodic()
-  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\audio\audio.py", line 1224, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
-  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\audio\audio.py", line 1202, in periodic_thread_main
-    periodic_pass()
-  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\audio\audio.py", line 1144, in periodic_pass
-    c.periodic()
-  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\audio\audio.py", line 534, in periodic
-    topf = load(filename)
-  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'Morning.ogg'.
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\core.py", line 4180, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\core.py", line 2785, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\transition.py", line 378, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\screen.py", line 731, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 1338, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 1064, in render
+    surf = render(d, rw, height - y, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 1338, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 888, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 1109, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 1064, in render
+    surf = render(d, rw, height - y, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\behavior.py", line 948, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\display\layout.py", line 1338, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\text\text.py", line 2171, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\text\text.py", line 665, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\text\text.py", line 257, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\text\font.py", line 721, in get_font
+    face = load_face(fn)
+  File "C:\Users\angry\OneDrive\Рабочий стол\renpy\renpy\text\font.py", line 662, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'ComicRelief.ttf'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.2.23090503
 Ты не один 0.1
-Sun Apr 13 18:06:38 2025
+Wed Oct  8 21:48:32 2025
