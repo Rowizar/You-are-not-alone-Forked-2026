@@ -880,7 +880,7 @@ label jenya_cp2:
     pause 1.0
 
     #Добрая музыка
-    play music sincerely fadein 1.0
+    play music mystery fadein 1.0
     #Фон с рассветом в комнате Гг.
     scene bg_room_dawn with dissolve
 
@@ -955,7 +955,7 @@ label jenya_cp2:
         $ hf_bg()
         with dissolve
 
-        centered "{size=+24}{color=#ffffe0}Собери все предметы"
+        centered "{size=+24}{color=#ffffe0}Найди все предметы в комнате."
 
         $ hf_start()
 
@@ -964,7 +964,7 @@ label jenya_cp2:
         if hf_return == 0:
             centered "{size=+24}{color=#ffffe0}У тебя получилось!"
         else:
-            centered "{size=+24}{color=#ffffe0}Не расстраивайся! \nНе собрано предметов: [hf_return]."
+            centered "{size=+24}{color=#ffffe0}Не расстраивайся! \nНе найдено предметов: [hf_return]."
     if hf_return != 0:
         menu:
             "Попробуешь ещё раз?"
@@ -1072,9 +1072,9 @@ label jenya_cp2:
 
     n"Но я был благодарен Жене не только за гадание и оберег, но и за всё. Надеюсь, и я смогу ей помочь однажды."
 
-    if persistent.jenya_endchap2 != True:
-        $ renpy.notify("В дневнике появилась новая запись!")
-    $ persistent.jenya_endchap2 = True
+    #if persistent.jenya_endchap2 != True:
+        #$ renpy.notify("В дневнике появилась новая запись!")
+    #$ persistent.jenya_endchap2 = True
 
     scene bg_room_zhenya with dissolve
     #show mc blush homea at left2 with dissolve - пригодится при оптимизации для веб-версии, как и остальные спрайты, заменённые на ca-версии
@@ -1103,7 +1103,7 @@ label jenya_cp2:
     show mc smile home ca at left2 with dissolve
 
     mc "Это само собой. Куда мы денемся."
-    #Звук урчания живота
+    play sound stomach
 
     n"На этот раз это был живот Жени."
 

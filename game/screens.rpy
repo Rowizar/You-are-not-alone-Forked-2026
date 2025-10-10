@@ -518,34 +518,36 @@ screen zhenya:
         xsize 600
         ysize 30
         xalign 0.25 yalign 0.23
-        if persistent.jenya_meet:
+        if persistent.jenya_meet and (persistent.ending1 or persistent.ending2):
+            text "{font=Assya Font Official.otf}{size=+5}Знакомство с Женей обещает много веселья. И я не просто думаю об этом. Я это чувствую.{/size}{/font}"
+        elif persistent.jenya_meet:
             text "{font=Assya Font Official.otf}{size=+5}Знакомство с Женей обещает много веселья{/size}{/font}"
     hbox:
         spacing 0
         xsize 600
         ysize 20
-        xalign 0.25 yalign 0.33
+        xalign 0.25 yalign 0.34
         if persistent.jenya_dreamcontinue:
-            text "{font=Assya Font Official.otf}{size=+5}27.01 А сны всё продолжаются{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}27.01 Мне показалось, что я смог разглядеть девушку из своих снов во тьме. Интересно, почему она носила летнюю одежду зимой?{/size}{/font}"
     hbox:
         spacing 0
         xsize 600
         ysize 50
-        xalign 0.25 yalign 0.4
+        xalign 0.25 yalign 0.47
         if persistent.jenya_endchap1:
-            text "{font=Assya Font Official.otf}{size=+5}А Женя милая{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}Может, пригласить Женю погулять на выходных? Она очень милая. Заодно разузнаю побольше про одногруппников.{/size}{/font}"
     hbox:
         spacing 0
         xsize 600
         ysize 100
-        xalign 0.25 yalign 0.5
+        xalign 0.25 yalign 0.64
         if persistent.jenya_endchap2:
-            text "{font=Assya Font Official.otf}{size=+5}18.02 Надеюсь, амулет Жени поможет{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}19.02 Я заметил, что иногда амулет Жени становится тёплым сам по себе, особенно ночью. Неужели он так реагирует на призрака?{/size}{/font}"
     hbox:
         spacing 0
         xsize 595
         ysize 50
-        xalign 0.25 yalign 0.7
+        xalign 0.25 yalign 0.78
         if persistent.jenya_godate:
             text "{font=Assya Font Official.otf}{size=+5}25.05 Я иду на свидание с Женей. Интересно, ей нравятся гортензии?…{/size}{/font}"
     hbox:
@@ -573,40 +575,42 @@ screen timur:
         xsize 600
         ysize 40
         xalign 0.25 yalign 0.1
-        if persistent.first_note:
+        if persistent.first_note and persistent.timur_dreamcontinue:
+            text "{font=Assya Font Official.otf}{size=+5}26.01 Сон какой-то странный приснился, слишком реальный... Может, это реакция на стресс {i}и, возможно, немного хаоса{/i}{/size}{/font}?"
+        elif persistent.first_note:
             text "{font=Assya Font Official.otf}{size=+5}26.01 Сон какой-то странный приснился, слишком реальный... Может, это реакция на стресс?{/size}{/font}"
 
     hbox:
         spacing 0
         xsize 600
         ysize 30
-        xalign 0.25 yalign 0.23
+        xalign 0.25 yalign 0.25
         if persistent.timur_first_note:
-            text "{font=Assya Font Official.otf}{size=+5}Буду осваиваться на новом месте. Условия в общежитии превзошли мои ожидания в лучшую сторону.{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}Условия в общежитии превзошли мои ожидания в лучшую сторону. Буду осваиваться и ждать первого таракана, который упадёт мне на голову.{/size}{/font}"
 
     hbox:
         spacing 0
         xsize 600
         ysize 20
-        xalign 0.25 yalign 0.35
+        xalign 0.25 yalign 0.41
         if persistent.timur_dreamcontinue:
-            text "{font=Assya Font Official.otf}{size=+5}27.01 А сны всё продолжаются{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}27.01 Сегодня я опять видел её. Незнакомку. Но почему-то мне показалось, что я знаю её имя. Но не могу вспомнить.{/size}{/font}"
 
     hbox:
         spacing 0
         xsize 600
         ysize 20
-        xalign 0.25 yalign 0.42
+        xalign 0.25 yalign 0.54
         if persistent.timur_argue:
-            text "{font=Assya Font Official.otf}{size=+5}Ну и урод. Не повезло с соседом!{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}Ну и сосед мне попался. Неужели так сложно согласиться на этот плакат? Я точно буду переселяться.{/size}{/font}"
 
     hbox:
         spacing 0
         xsize 600
         ysize 100
-        xalign 0.25 yalign 0.52
+        xalign 0.25 yalign 0.66
         if persistent.timur_feeling:
-            text "{font=Assya Font Official.otf}{size=+5}17.02 Какое-то странное совпадение со сном.{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}17.02 Меня преследует ощущение, что это был вещий сон. Но вдруг настоящая опасность ещё впереди?{/size}{/font}"
     hbox:
         spacing 0
         xsize 600
@@ -619,27 +623,27 @@ screen timur:
         spacing 0
         xsize 600
         ysize 50
-        xalign 0.25 yalign 0.6
-        if persistent.timur_help:
-            text "{font=Assya Font Official.otf}{size=+5}Я рад, что смог помочь Тимуру. Ситуация очень напоминает мой сегодняшний сон.{/size}{/font}"
-
-    hbox:
-        spacing 0
-        xsize 600
-        ysize 50
         xalign 0.25 yalign 0.75
-        if persistent.timur_fun:
-            text "{font=Assya Font Official.otf}{size=+5}Сегодня мы с Тимуром хорошо провели время. Оказывается, мой сосед – очень интересный собеседник.{/size}{/font}"
+        if persistent.timur_help:
+            text "{font=Assya Font Official.otf}{size=+5}Я рад, что смог помочь Тимуру избежать травмы. Всё-таки сон и вправду был вещим.{/size}{/font}"
 
     hbox:
         spacing 0
         xsize 600
         ysize 50
         xalign 0.78 yalign 0.6
+        if persistent.timur_fun:
+            text "{font=Assya Font Official.otf}{size=+5}Оказывается, Тимур интересный собеседник. Просто… ему нужна поддержка. Он должен знать, что он не один.{/size}{/font}"
+
+    hbox:
+        spacing 0
+        xsize 600
+        ysize 50
+        xalign 0.78 yalign 0.8
         if persistent.timur_bad and not(persistent.timur_good):
-            text "{font=Assya Font Official.otf}{size=+5}19.02 Вот тебе новость — уехал, оставил меня одного со всем разбираться. Разочарование.{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}19.02 И как я должен был справляться без Тимура? Я и так сделал всё, что мог. Ещё и обои эти – кто на них дырки оставил?{/size}{/font}"
         elif persistent.timur_good:
-            text "{font=Assya Font Official.otf}{size=+5}19.02 Я так устал за день, но главное всё сделал. Благодаря советам Тимура работать было легче.{/size}{/font}"
+            text "{font=Assya Font Official.otf}{size=+5}19.02 Благодаря советам Тимура работать было легче. Я, конечно, устал за день, но, главное, всё сделал правильно. Кстати, странно, что в углу на обоях нарисован какой-то смайлик.{/size}{/font}"
 
 
     # Код галлереи

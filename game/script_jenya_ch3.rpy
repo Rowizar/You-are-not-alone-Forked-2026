@@ -37,6 +37,10 @@ label jenya_cp3:
 
     scene bg_room_dawn with dissolve
 
+    if persistent.jenya_endchap2 != True:
+        $ renpy.notify("В дневнике появилась новая запись!")
+    $ persistent.jenya_endchap2 = True
+
     "Время идёт, наступает весна, как поётся в одной известной песне, «чумачечая»."
 
     "На улицах появляются лужи. Мне всё чаще встречаются могучие кораблики из бумаги, рассекающие ручейки на асфальте. Люди  же стали ходить с расстегнутыми куртками, не пряча свои новые прически под шапками."
@@ -376,7 +380,7 @@ label jenya_cp3:
     show mc smile crossed ca at left2 with dissolve
     mc "Зная, что ты на пути к своему счастью, как-нибудь справлюсь."
 
-    mc "Может быть, сейчас ты и ошиблась с направлением, но, пробуя себя в разном, когда-нибудь ты найдешь то, чем действительно хочешь заниматься. Главное – следовать своему сердцу."
+    mc "Может быть, сейчас ты и ошиблась с направлением, но, пробуя себя в разном, когда-нибудь ты найдешь то, чем действительно хочешь заниматься. Главное – не бояться действовать."
 
     show jenya sada at right2 with dissolve
     #show mc sad crosseda at left2 with dissolve
@@ -581,7 +585,7 @@ label jenya_cp3:
 
     #show mc normal homea at left2 with dissolve
     show mc normal home ca at left2 with dissolve
-    play music gone fadein 1.0
+    play music sadness fadein 1.0
 
     mc "С тобой всё в порядке?"
 

@@ -118,7 +118,7 @@ image mc talk crossed ca = At('mc talk crossed c', sprite_highlight('mc'))
 image mc thoughtful crossed ca = At('mc thoughtful crossed c', sprite_highlight('mc'))
 
 image timur normala = At('timur normal', sprite_highlight('timur'))
-image timur angrya = At('timur angry', sprite_highlight('timur'))
+image timur normal wintera = At('timur normal winter', sprite_highlight('timur'))
 image timur angry wintera = At('timur angry look winter', sprite_highlight('timur'))
 image timur normal smilea = At('timur normal smile', sprite_highlight('timur'))
 image timur normal homea = At('timur normal home', sprite_highlight('timur'))
@@ -179,6 +179,7 @@ define audio.ruining = "audio/sounds/ruin_room.mp3"
 define audio.smash = "audio/sounds/smash.wav"
 define auidio.trash = "audio/sounds/trash.mp3"
 define audio.scotch = "audio/sounds/scotch.mp3"
+define audio.stomach = "audio/sounds/stomach_groaning.mp3"
 
 #эмбиент
 define audio.city = "audio/ambient/city.mp3"
@@ -205,7 +206,6 @@ define audio.chill = "audio/music/Chill.mp3"
 define audio.darkrooms = "audio/music/DarkRooms.mp3"
 define audio.mystery = "audio/music/EvaMemories.mp3"
 define audio.funny = "audio/music/Funny.mp3"
-define audio.gone = "audio/music/DontGo.mp3"
 define audio.circus = "audio/music/DailyCircus.mp3"
 define audio.home = "audio/music/Home.mp3"
 define audio.knowledge = "audio/music/Knowledge.mp3"

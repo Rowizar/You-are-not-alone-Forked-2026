@@ -4,6 +4,9 @@ label timur_bad_end:
 
     scene bg_room_after_repair with dissolve
     "Весь день я клеил эти чёртовы обои. Где-то они отклеивались, где-то наслаивались. У меня уже не оставалось сил."
+    if persistent.timur_bad != True:
+        $ renpy.notify("В дневнике появилась новая запись!")
+    $ persistent.timur_bad = True
 
     "В конечном итоге я махнул рукой и лёг спать."
 
