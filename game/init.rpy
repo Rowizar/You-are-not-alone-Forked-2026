@@ -11,7 +11,7 @@ define j_un = Character('???', ctc_position="fixed", color="#3d3327", image='jen
 define a_un = Character('???', ctc_position="fixed", color="#3d3327", image='alex', callback=name_callback, cb_name="alex")
 define sh = Character('Шнурок', ctc_position="fixed", color="#3d3327", image='alex', callback=name_callback, cb_name="alex")
 define un = Character('???', ctc="ctc_atl", ctc_position="fixed", color="#3d3327")
-
+define mg = Character('Марго', ctc_position="fixed", color="#3d3327")
 #Теги для сообщений
 
 define mc_nvl = Character("Я", kind=nvl, image="mcimage", callback=Phone_SendSound)

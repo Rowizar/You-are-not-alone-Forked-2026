@@ -902,7 +902,4 @@ label back_to_dorm:
 
     # Общее завершение главы
     "Завтра будет новый день..."
-
-
-return
-    
+    jump alexander_ch2
