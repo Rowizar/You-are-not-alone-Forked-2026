@@ -372,7 +372,7 @@ label alex_night_call:
     jump alex_spectacle
 
 label alex_spectacle:
-    scene bg_actovy_zal with dissolve
+    scene bg_aktovy_zal with dissolve
     play music evening fadein 2.0
 
     sh "Пойдём, уже скоро начало."
