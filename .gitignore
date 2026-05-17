@@ -1,1 +1,25 @@
 CLAUDE.md
+
+# Ren'Py скомпилированный байткод и кэш
+*.rpyc
+*.rpymc
+game/cache/
+game/tl/None/
+
+# Локальные сохранения игрока
+game/saves/
+
+# Артефакт от запуска с неверной рабочей папкой
+game/images/game/
+
+# Runtime-логи Ren'Py
+errors.txt
+traceback.txt
+log.txt
+files.txt
+progressive_download.txt
+
+# Мусор ОС
+.DS_Store
+Thumbs.db
+
