@@ -63,7 +63,8 @@ label alexander_ch2:
 
     "Я попытался отшутиться, натянув напряжённую улыбку."
 
-    show alex very angrya at right2 with dissolve
+    # TODO: заменить на alex very angry, когда нарисуют. Сейчас плейсхолдер.
+    show alex angry wintera at right2 with dissolve
 
     sh "Ты вообще представляешь, что могло бы случиться? Одна секунда невнимательности и всё! Понимаешь?"
 
@@ -255,20 +256,25 @@ label alex_ch2_choice:
 
             # Разговор Марго и Шнурка
             show alex normala at right2 with dissolve
+            show margo base at left2 with dissolve
 
             mg "Привет, я бы хотела пригласить тебя на наш спектакль. Мы скоро ставим постановку, и я подумала, что тебе было бы интересно."
 
             sh "Спасибо за приглашение, но я не уверен, что у меня найдётся окно в расписании. Учёба занимает много времени, да и я не особо фанат театра."
 
+            show margo confusion at left2 with dissolve
             mg "Но театр это же так интересно! Любое произведение оживает на сцене, а актёры превращаются в любимых персонажей! Уверена, тебе понравится!"
 
             "Шнурок, кажется, безнадёжен... Он вообще не умеет разговаривать с девушками. Да тут и слепой увидит, что он ей нравится."
 
             # ГГ вмешивается
-            show mc smilea at left2 with dissolve
+            show alex normala at right
+            show margo base at center
+            show mc smilea at left with dissolve
 
             mc "Ого, у нас оказывается и театральный кружок существует? Ничего о нём не слышал."
 
+            show margo smile at center with dissolve
             mg "Да, у нас скоро спектакль. Хочешь прийти?"
 
             mc "Конечно, с удовольствием! А Шнурок, наш староста, ведь не сможет пропустить такое мероприятие?"
@@ -283,6 +289,7 @@ label alex_ch2_choice:
 
             mc "Отлично, договорились. Пока."
 
+            hide margo smile with dissolve
             hide alex normala with dissolve
             hide mc smilea with dissolve
 
@@ -397,7 +404,8 @@ label alex_spectacle:
 
     mc "Ну что, Шнурок, как тебе Джульетта? Кажется, она пригласила тебя на этот спектакль не просто так."
 
-    show alex sada at right2 with dissolve
+    # TODO: заменить на alex sad, когда нарисуют. Сейчас плейсхолдер.
+    show alex gloomya at right2 with dissolve
 
     "Шнурок резко покраснел и отвёл взгляд."
 
@@ -411,6 +419,7 @@ label alex_spectacle:
 
     "Он кивнул, смотря куда-то в сторону. Мы молча пошли к выходу из здания, но к нам подбежала Марго, уже сменившая наряд Джульетты на повседневную одежду."
 
+    show margo confusion at center with dissolve
     mg "Ну как, ребята? Вам понравилось?"
 
     "Девушка смотрела прямо на Шнурка, явно волнуясь."
@@ -423,6 +432,7 @@ label alex_spectacle:
 
     "Я едва сдержал улыбку. Ага, конечно, «читал». Явно пытается произвести впечатление. Но хоть что-то делает!"
 
+    show margo smile at center with dissolve
     mg "Спасибо! Я в восторге от того, что тебя интересуют такие книги!"
 
     "Марго сияла."
@@ -443,16 +453,19 @@ label alex_spectacle:
 
     sh "Нам пора идти. Всем нужно подготовиться к парам и сделать домашнее задание."
 
+    show margo confusion at center with dissolve
     "Я заметил, как взгляд Марго немного потускнел. Так, стоп. Это же идеальный шанс!"
 
     mc "Эй, Саша, а ведь тебе с Марго по пути, верно? Проводи её."
 
     sh "Я не думаю, что это необходимо... Она, наверное, сама..."
 
+    show margo base at center with dissolve
     mg "Нам правда по пути..."
 
     "Шнурок покраснел ещё сильнее, пробормотал что-то невнятное и, в конце концов, кивнул."
 
+    hide margo base with dissolve
     hide alex normala with dissolve
     hide mc smilea with dissolve
 
