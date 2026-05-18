@@ -155,5 +155,6 @@
                 }
             }
         ]
-    }
+    },
+    "python.REPL.enableREPLSmartSend": false
 }
