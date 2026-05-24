@@ -14,6 +14,7 @@ define un = Character('???', ctc="ctc_atl", ctc_position="fixed", color="#3d3327
 define mg = Character('Марго', ctc_position="fixed", color="#3d3327")
 define u = Character('Уборщик', color="#3d3327")
 define bb = Character('Алевтина Павловна', color="#3d3327")
+define dots = Character('...', color="#3d3327")
 #Теги для сообщений
 
 define mc_nvl = Character("Я", kind=nvl, image="mcimage", callback=Phone_SendSound)
